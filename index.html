@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnuprasad - Professional Portfolio & Interview Suite</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar no-print">
+        <div class="nav-container">
+            <span class="nav-logo">VP Portfolio</span>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="btn btn-icon" title="Toggle Dark/Light Mode" aria-label="Toggle Theme">
+                    <svg class="sun-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                    <svg class="moon-icon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" style="display:none;"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                </button>
+                <button id="print-btn" class="btn btn-primary">
+                    <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 6px;"><path d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect x="6" y="14" width="12" height="8"></rect></svg>
+                    Export to PDF
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Master Container -->
+    <div class="portfolio-container">
+
+        <!-- SECTION 1: COVER PAGE -->
+        <header class="section cover-page card" id="cover">
+            <div class="cover-grid">
+                <div class="cover-info">
+                    <h1 class="cover-name">vishnuprasad</h1>
+                    <p class="cover-title">Full Stack Developer</p>
+                    <p class="cover-subtitle">Integrated MCA Student | Technology & Business Systems Enthusiast</p>
+                    
+                    <div class="contact-grid">
+                        <a href="mailto:vishnusachu456@depaul.edu.in" class="contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <span>vishnusachu456@depaul.edu.in</span>
+                        </a>
+                        <a href="tel:7736858834" class="contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <span>7736858834</span>
+                        </a>
+                        <div class="contact-item location">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Kochi, Kerala, India</span>
+                        </div>
+                        <a href="https://linkedin.com/in/vishnu" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            <span>linkedin.com/in/vishnu</span>
+                        </a>
+                        <a href="https://github.com/vizznuprasad72" target="_blank" rel="noopener noreferrer" class="contact-item">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            <span>github.com/vizznuprasad72</span>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="cover-image-container">
+                    <img src="developer_avatar.png" alt="Vishnuprasad Profile Picture" class="profile-image">
+                </div>
+            </div>
+        </header>
+
+        <!-- SECTION 2 & 3: SUMMARY, CAREER OBJECTIVE & ABOUT ME -->
+        <main class="grid-layout">
+            <section class="section card left-column" id="summary-objective">
+                <div class="section-header">
+                    <h2>Career Core</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <div class="content-block">
+                    <h3>Professional Summary</h3>
+                    <p class="text-justify">
+                        Detail-oriented and results-driven Integrated MCA student with practical, hands-on experience in full-stack web and mobile application development. Proficient in designing, coding, and deploying scalable academic and real-world software solutions using C#, ASP.NET, PHP, SQL Server, and MySQL. Successfully completed front-end development training at NeST Digital Academy, mastering component-based UI engineering with Angular and modern web optimization practices. Proven track record of developing end-to-end booking systems, house rental platforms, and database-driven workflows. Combines strong analytical reasoning and database management capabilities with an adaptable, cooperative, team-oriented approach. Highly passionate about leveraging business informatics principles to bridge business needs and technology systems. Eager to contribute to scalable tech architectures, solve complex programming challenges, and drive organizational success.
+                    </p>
+                </div>
+
+                <div class="content-block">
+                    <h3>Career Objective</h3>
+                    <p class="text-justify">
+                        Ambitious and technically proficient Integrated MCA graduate seeking an entry-level Software Developer, IT Analyst, or Business Informatics position. Aiming to leverage hands-on training in full-stack web technologies (ASP.NET, PHP, Angular, SQL) to design, develop, and optimize business-aligned software applications. Eager to apply analytical problem-solving skills in an agile software engineering environment to drive digital transformation and deliver high-quality, scalable solutions.
+                    </p>
+                </div>
+            </section>
+
+            <section class="section card right-column" id="about-me">
+                <div class="section-header">
+                    <h2>About Me</h2>
+                    <div class="divider"></div>
+                </div>
+                
+                <p class="text-justify">
+                    I am an aspiring Full Stack Developer currently pursuing my Integrated Master of Computer Applications (MCA) at De Paul Institute of Science and Technology. My journey into technology started with a fascination for how software impacts daily life, which quickly evolved into a passion for writing clean, efficient, and impactful code.
+                </p>
+                
+                <div class="strengths-highlight-grid">
+                    <div class="strength-pill">
+                        <strong>Who I Am:</strong> A dedicated, logical problem solver bridging development and business processes.
+                    </div>
+                    <div class="strength-pill">
+                        <strong>My Strengths:</strong> Full-stack logical reasoning, database normalization, and adaptive frontend layout design.
+                    </div>
+                    <div class="strength-pill">
+                        <strong>Passion for Tech:</strong> Fascinated by scalable system architectures and user-experience optimization.
+                    </div>
+                    <div class="strength-pill">
+                        <strong>Work Ethic:</strong> Focused on clean code, thorough documentation, and disciplined execution.
+                    </div>
+                    <div class="strength-pill">
+                        <strong>Growth Mindset:</strong> Eager to absorb feedback, master new frameworks, and adapt to evolving software requirements.
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- PAGE BREAK FOR PDF -->
+        <div class="page-break"></div>
+
+        <!-- SECTION 4 & 9: EDUCATION & EXPERIENCE (TIMELINE) -->
+        <section class="section card" id="education-experience">
+            <div class="section-header">
+                <h2>Education & Internships</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="timeline">
+                
+                <!-- TIMELINE ITEM 1: NEST DIGITAL INTERNSHIP -->
+                <div class="timeline-item">
+                    <div class="timeline-marker icon-work">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">Mar 2026 - Apr 2026</span>
+                            <span class="timeline-badge badge-work">Internship</span>
+                        </div>
+                        <h3>Front-End Development Intern</h3>
+                        <p class="timeline-org">NeST Digital Academy | Kochi, Kerala</p>
+                        
+                        <div class="timeline-details">
+                            <ul>
+                                <li><strong>Training & Certification:</strong> Completed intensive training in modern front-end application development using Angular and TypeScript.</li>
+                                <li><strong>UI Component Engineering:</strong> Worked on building component-based modular web interfaces, mastering layout designs, responsive styling, and modern UI architectures.</li>
+                                <li><strong>Industry Immersion:</strong> Participated in a comprehensive 7-day Industry Immersion Program, obtaining hands-on exposure to corporate software engineering standards and team dynamics.</li>
+                                <li><strong>Key Achievement:</strong> Successfully built responsive mock web dashboard elements using custom Angular components, demonstrating state synchronization and reactive design.</li>
+                                <li><strong>Skills Gained:</strong> Angular, TypeScript, SPA Component Design, Git version control, Agile project workflows, Collaborative communication.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- TIMELINE ITEM 2: MCA EDUCATION -->
+                <div class="timeline-item">
+                    <div class="timeline-marker icon-edu">
+                        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path></svg>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-meta">
+                            <span class="timeline-date">2022 - 2027 (Expected)</span>
+                            <span class="timeline-badge badge-edu">Education</span>
+                        </div>
+                        <h3>Integrated Master of Computer Applications (MCA)</h3>
+                        <p class="timeline-org">De Paul Institute of Science and Technology (DiST) | Angamaly, Kerala</p>
+                        
+                        <div class="timeline-details">
+                            <div class="academic-stats">
+                                <span class="stat-bubble"><strong>CGPA:</strong> 7.8 / 10</span>
+                                <span class="stat-bubble"><strong>Duration:</strong> 5-Year Integrated Course</span>
+                            </div>
+                            
+                            <ul>
+                                <li><strong>Relevant Coursework:</strong> Web Application Development, Object-Oriented Programming (C#), Database Management Systems (SQL Server, MySQL, MongoDB), Mobile Application Development (Flutter, Dart), Agile Sprints, Software Engineering.</li>
+                                <li><strong>Key Academic Achievement:</strong> Published a research paper on <strong>Swarm Robotics</strong> (2022).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SECTION 5 & 6: TECHNICAL & SOFT SKILLS -->
+        <section class="section card" id="skills">
+            <div class="section-header">
+                <h2>Skills Inventory</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- TECHNICAL SKILLS -->
+                <div class="skills-column">
+                    <h3>Technical Expertise</h3>
+                    <p class="skills-note no-print">*Skill levels assigned based on academic coursework and internship applications. Confirm or adjust as needed.</p>
+                    
+                    <div class="skill-category">
+                        <h4>Programming Languages</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>C#</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>PHP</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>JavaScript</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Dart</span><span class="skill-lvl lvl-beg">Beginner</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 40%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Web & Mobile Technologies</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>HTML5 & CSS3</span><span class="skill-lvl lvl-adv">Advanced</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Bootstrap</span><span class="skill-lvl lvl-adv">Advanced</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Angular</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>React</span><span class="skill-lvl lvl-beg">Beginner</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 45%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Flutter</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 60%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Backend & Databases</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>ASP.NET Web & MVC</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL Server</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 78%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>MySQL</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Laravel / Node.js / Express.js / Firebase / MongoDB</span><span class="skill-lvl lvl-beg">Beginner</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 35%;"></div></div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h4>Development Tools</h4>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Visual Studio & VS Code</span><span class="skill-lvl lvl-adv">Advanced</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 88%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Git & GitHub</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Postman (API Testing)</span><span class="skill-lvl lvl-int">Intermediate</span></div>
+                            <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SOFT SKILLS -->
+                <div class="skills-column">
+                    <h3>Professional & Soft Skills</h3>
+                    <div class="soft-skills-grid">
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-header">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                <h5>Communication</h5>
+                            </div>
+                            <p>Capable of articulating technical workflows, summarizing development metrics, and documenting features clearly. Fluent in Malayalam and English.</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-header">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                                <h5>Teamwork</h5>
+                            </div>
+                            <p>Proven ability to collaborate with other developers and stakeholders during the 7-day Industry Immersion Program and group project work.</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-header">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                <h5>Problem Solving</h5>
+                            </div>
+                            <p>Enjoys identifying bugs in full-stack logical pathways, tracing data inconsistencies in SQL schemas, and fixing UI bugs.</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-header">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21.5 2v6h-6M21.34 15.57a10 10 0 1 1-.57-8.38l5.67-5.67"></path></svg>
+                                <h5>Adaptability</h5>
+                                <span class="badge-core">Core</span>
+                            </div>
+                            <p>Demonstrated ability to learn and shift context across multiple tech stacks: .NET Core for e-commerce, PHP/MySQL for booking systems, and Angular for frontend work.</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-header">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                <h5>Time Management</h5>
+                            </div>
+                            <p>Balancing five years of rigorous academic coursework, multiple self-directed projects, version control tasks, and professional internship training schedules.</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-header">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                                <h5>Critical Thinking</h5>
+                            </div>
+                            <p>Adept at examining functional specifications and translating them into robust, entity-relationship logical structures and user-centric navigation schemas.</p>
+                        </div>
+                        <div class="soft-skill-card">
+                            <div class="soft-skill-header">
+                                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+                                <h5>Leadership</h5>
+                            </div>
+                            <p>Proactive in organizing project tasks, designing core systems, and maintaining git branch code bases during academic group exercises.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE BREAK FOR PDF -->
+        <div class="page-break"></div>
+
+        <!-- SECTION 7: PROJECTS -->
+        <section class="section card" id="projects">
+            <div class="section-header">
+                <h2>Featured Engineering Projects</h2>
+                <div class="divider"></div>
+            </div>
+
+            <!-- PROJECT 1: DREAMCATCHER -->
+            <div class="project-container">
+                <div class="project-header-row">
+                    <h3 class="project-title">Online Dreamcatcher Store</h3>
+                    <span class="project-tech-badge">ASP.NET, C#, SQL Server</span>
+                </div>
+                
+                <div class="project-details-grid">
+                    <div class="project-detail-box">
+                        <strong>Objective:</strong> Create a full-stack, secure, database-driven e-commerce and booking system enabling users to customize and order artistic dreamcatchers online.
+                    </div>
+                    <div class="project-detail-box">
+                        <strong>Problem Statement:</strong> Local handcrafters had no integrated system for managing inventory, validating user bookings, or keeping track of customer reservations securely.
+                    </div>
+                </div>
+
+                <div class="project-text-content">
+                    <p><strong>My Contributions:</strong> Designed and implemented the complete SQL relational database schema. Developed C# backend APIs, user registration endpoints, selection filters, and order confirmation handlers. Integrated HTML/CSS/JavaScript interface forms.</p>
+                    <p><strong>Key Features:</strong> Responsive web catalog for browsing and selection, multi-criteria database filters, secure user account management session handling, and persistent cart booking tracking.</p>
+                    <div class="project-alert">
+                        <strong>Challenges Faced & Lessons Learned:</strong> Designing a safe booking transaction sequence that prevented double-allocation of customized items. Resolved by introducing database-level transaction locks (`BEGIN TRANSACTION`). Learned the importance of transactional isolation levels.
+                    </div>
+                    <p class="project-outcome"><strong>Outcome:</strong> Delivered a fully functional local application demo supporting simultaneous transaction executions without state corruption, ready for hosting.</p>
+                </div>
+            </div>
+
+            <div class="project-divider"></div>
+
+            <!-- PROJECT 2: ONLINE TOUR PACKAGE & BUS BOOKING SYSTEM -->
+            <div class="project-container">
+                <div class="project-header-row">
+                    <h3 class="project-title">Online Tour Package & Bus Booking System</h3>
+                    <span class="project-tech-badge">PHP, MySQL, VS Code, Bootstrap</span>
+                </div>
+
+                <div class="project-details-grid">
+                    <div class="project-detail-box">
+                        <strong>Objective:</strong> Design and build a web-based tour package and bus booking management system to automate trip bookings, schedule lookups, and reservation management.
+                    </div>
+                    <div class="project-detail-box">
+                        <strong>Problem Statement:</strong> Travel packagers and customers relied on manual operations, resulting in scheduling conflicts, slow confirmations, and fragmented seat allocations.
+                    </div>
+                </div>
+
+                <div class="project-text-content">
+                    <p><strong>My Contributions:</strong> Designed and optimized MySQL database tables for tours, buses, schedules, and reservations. Developed backend PHP scripts mapping parameters to search queries, user authentication flows, and booking requests. Integrated responsive Bootstrap interfaces.</p>
+                    <p><strong>Key Features:</strong> Interactive tour package catalog, property/accommodation coordination elements, advanced multi-field search filters, secure customer and packager login portals, booking requests, and database-driven package management.</p>
+                    <div class="project-alert">
+                        <strong>Challenges Faced & Lessons Learned:</strong> Handling complex SQL queries across tables representing tours, routes, and custom options in MySQL. Resolved by writing optimized views and indexing foreign keys to keep query latency minimal. Learned techniques in query profiling and execution planning.
+                    </div>
+                    <p class="project-outcome"><strong>Outcome:</strong> Deployed a local web application prototype with stable booking request states and query-driven layouts, ready for live travel packaging.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PAGE BREAK FOR PDF -->
+        <div class="page-break"></div>
+
+        <!-- SECTION 8, 10 & 11: CERTIFICATIONS, ACHIEVEMENTS & STRENGTHS -->
+        <section class="section grid-layout" id="certifications-achievements">
+            <!-- LEFT COLUMN: CERTIFICATIONS & ACHIEVEMENTS -->
+            <div class="card left-column">
+                <div class="section-header">
+                    <h2>Credentials & Accomplishments</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="content-block">
+                    <h3>Professional Certifications</h3>
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                        </div>
+                        <div class="cert-info">
+                            <h5>Front-End Application Development using Angular</h5>
+                            <p class="cert-org">NeST Digital Academy | Issued: 2026</p>
+                        </div>
+                    </div>
+                    <div class="cert-item">
+                        <div class="cert-icon">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M8 14s1.5 2 4 2 4-2 4-2"></path><line x1="9" y1="9" x2="9.01" y2="9"></line><line x1="15" y1="9" x2="15.01" y2="9"></line></svg>
+                        </div>
+                        <div class="cert-info">
+                            <h5>Completed 7-Day Industry Immersion Program</h5>
+                            <p class="cert-org">NeST Digital Academy | Issued: 2026</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h3>Key Achievements</h3>
+                    <ul class="achievements-list">
+                        <li><strong>Research Publication:</strong> Successfully published a research paper on <strong>Swarm Robotics</strong> (2022), demonstrating early aptitude for academic analysis, research writing, and robotics logic.</li>
+                        <li><strong>Strong Academic Metric:</strong> Achieved a cumulative CGPA of 7.8/10 in the Integrated MCA program at De Paul Institute.</li>
+                        <li><strong>Full-Stack Prototyping:</strong> Successfully built and validated two multi-tier logical applications from database up to user interface.</li>
+                        <li><strong>Agile Adaptability:</strong> Acquired structural knowledge of Agile development boards and sprint standards via corporate academy training.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- RIGHT COLUMN: STRENGTHS & WHY HIRE ME -->
+            <div class="card right-column">
+                <div class="section-header">
+                    <h2>Why Hire Me?</h2>
+                    <div class="divider"></div>
+                </div>
+
+                <div class="content-block">
+                    <h3>Professional Strengths</h3>
+                    <div class="strengths-grid">
+                        <div class="strength-card">
+                            <strong>Full-Stack Versatility</strong>
+                            <p>Transitioning easily from structural SQL designs to responsive Bootstrap and Angular frontend components.</p>
+                        </div>
+                        <div class="strength-card">
+                            <strong>MCA Rigor</strong>
+                            <p>Deep foundational education in programming logic, systems analysis, and business informatics paradigms.</p>
+                        </div>
+                        <div class="strength-card">
+                            <strong>Pragmatic Work Ethic</strong>
+                            <p>Committed to testing endpoints with Postman, tracing query paths, and solving database problems logically.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-block">
+                    <h3>5 Core Hiring Propositions</h3>
+                    <ul class="hiring-propositions">
+                        <li>
+                            <strong class="text-primary">1. Fast Integration to Agile Teams:</strong> 
+                            My internship and Industry Immersion at NeST Digital Academy familiarized me with professional sprint schedules and git branching.
+                        </li>
+                        <li>
+                            <strong class="text-primary">2. Structured Database Capabilities:</strong> 
+                            I design schemas with integrity, write parameterized SQL queries, and resolve performance blocks.
+                        </li>
+                        <li>
+                            <strong class="text-primary">3. Modern Frontend Foundations:</strong> 
+                            Certified in Angular component styling, responsive Bootstrap forms, and modern ES6 JavaScript scripts.
+                        </li>
+                        <li>
+                            <strong class="text-primary">4. Informatics Perspective:</strong> 
+                            I build software keeping the user journey and business requirements in mind, minimizing logic errors.
+                        </li>
+                        <li>
+                            <strong class="text-primary">5. Active Self-Development:</strong> 
+                            Eager to tackle new programming frameworks, receive constructive criticism, and contribute code to repositories immediately.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+
+    <!-- Script Import -->
+    <script src="script.js"></script>
+</body>
+</html>
